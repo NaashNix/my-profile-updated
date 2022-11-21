@@ -6,7 +6,7 @@ const MenuBar = () => {
 		<div className={classes.menuBarContainer}>
 			<span className={classes.logo}>NAASHNIX</span>
 			<div>
-				<a className={classes.menuItems} href="">
+				<a className={`${classes.menuItems} ${classes.active}`} href="">
 					HOME
 				</a>
 				<a className={classes.menuItems} href="">
@@ -22,7 +22,7 @@ const MenuBar = () => {
 					CONTACT
 				</a>
 			</div>
-			<a href="">START A PROJECT</a>
+			<a className={classes.startPjctBtn} href="">START A PROJECT</a>
 		</div>
 	);
 }
