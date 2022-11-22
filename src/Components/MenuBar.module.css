@@ -74,6 +74,50 @@
   color: black;
 }
 
+.check{
+  /* display: none; */
+  width: 20px;
+  height: 20px;
+}
+
+.checkBtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .checkBtn {
+    display: block;
+  }
+
+  i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(65, 65, 65, 0.6);
+    top: 40px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+}
+
+.showPanel{
+  left: 0;
+}
+
 .startPjctBtn:hover,
 .startPjctBtn:focus{
   box-shadow: rgba(255, 255, 255, 0.35) 0 25px 18px 14px inset,rgba(218, 228, 222, 0.25) 0 1px 2px,rgba(247, 248, 248, 0.25) 0 2px 4px,rgba(255, 255, 255, 0.25) 0 4px 8px,rgba(255, 255, 255, 0.25) 0 8px 16px,rgba(255,255,255,.25) 0 0px 32px;

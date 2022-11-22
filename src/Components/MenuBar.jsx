@@ -21,6 +21,7 @@ const MenuBar = () => {
 					setMenuClicked(e.target.checked);
 				}}
 				className={classes.check}
+				id={"check"}
 			/>
 
 			<label htmlFor="check" className={classes.checkBtn}>
@@ -30,7 +31,11 @@ const MenuBar = () => {
 			<span className={classes.logo}>NAASHNIX</span>
 
 			<div className={classes.elementHolder}>
-				<ul className={classes.menuOptionUl}>
+				<ul
+					className={`${classes.menuOptionUl} ${
+						menuClicked && classes.showPanel
+					}`}
+				>
 					<li>
 						<a className={classes.menuItems} href="">
 							HOME
